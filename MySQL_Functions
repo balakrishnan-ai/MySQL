@@ -1,0 +1,95 @@
+create database Mani;
+
+use Mani;
+
+create table Student(id int,name varchar(50),address varchar(50),primary key(id));
+
+insert into Student values(1234567890,"Bala","Madurai");
+insert into Student values(101,"Balakrishnan","Madurai");
+insert into Student values(102,"Abhinesh","Dindugal");
+insert into Student values(103,"Nimal","Madurai");
+insert into Student values(104,"Santhosh","Sivaganga");
+
+-- Select distinct
+/*
+ Display the particular column without duplicate 
+select distinct col_name from table_name;
+*/
+select distinct address from Student;
+
+-- Select Where 
+/* 
+It is a filter option is filter this columns
+select * from table_name where col_name="value"; 
+*/
+select * from Student where address="Madurai";
+
+-- AND
+/*
+Its like a  AND operator and it check the col_1 and col_2
+Its two condition is correct(True) and its display the table   (True And True =True)
+select * from table_name where col_name1="value"(condition 1) AND col_name2="value"(condition 2);
+*/
+select * from Student where address="Madurai" AND id="101";
+
+-- OR
+/*
+Its like a OR operator and it check the col_1 and col_2
+It any One condition is correct(True) and its display the table       (True OR False=True)
+select * from table_name where col_name1="value"(condition 1) OR col_name2="value"(condition 2);
+*/
+select * from Student where address="Madurai" OR id="101";
+
+-- NOT
+/*
+Its like a NOT operator and it check the col_1
+Its a condition is correct(True) and its automatically change the (False)    (Not 'True'= False) 
+select * from table_name where NOT col_name1="value";
+*/
+select * from Student where NOT name="Bala";
+
+-- ORDER BY(Default)
+/*
+Its is a order by is a default (Ascending order)
+And it check the define column
+It check the "Alphabets=>A-Z" and "number=1-n"
+select * from table_name ORDER BY col_name1;
+*/
+select * from Student ORDER BY address;
+
+-- ORDER BY ASC(Ascending order)
+/*
+Its is a order by is a ASC (Ascending order)
+And it check the define column
+It check the "Alphabets=>A-Z" and "number=1-n"
+select * from table_name ORDER BY ASC col_name1;
+*/
+select * from Student ORDER BY address ASC;
+
+-- ORDER BY ASC(Ascending order)
+/*
+Its is a order by is a DESC (Descending order)
+And it check the define column
+It check the "Alphabets=>Z to A" and "number=n to 1"
+select * from table_name ORDER BY DESC col_name1;
+*/
+select * from Student ORDER BY address DESC;
+
+-- LIMIT 
+/*
+It is a limited for a data(rows)
+And it store the so many data and it given limited rows
+Its display the limited rows
+select * from table_name LIMIT number of rows
+*/
+select * from Student LIMIT 3;
+
+-- MIN
+/*
+It is check the minimum number of a data in a "column 1"
+And its display the data
+select MIN(col_name1) from table_name;
+*/
+select MIN(id) from Student;
+
+select * from Student;

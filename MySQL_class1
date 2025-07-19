@@ -1,0 +1,18 @@
+//create database databaseName;
+create database mani;
+
+//use databaseName;
+use mani;
+
+//create table table_name(var_name1 data_Type,var_name2 data_type,.......);
+create table Student3(id int,name varchar(20),dept varchar(10),mobileno varchar(10),mailid varchar(50),address varchar(60),primary key(mobileno));
+
+//insert into table_name values(values insert the sequence(order));
+insert into Student3 values(101,"Balakrishnan","Msc","1234567890","abcd@gmail.com","Madurai");
+
+insert into Student3 values(102,"Balakrishnan","Msc","1234567890","abcd@gmail.com","Madurai");
+
+insert into Student2 values(101,"Balakrishnan","Msc","1234567890","abcd@gmail.com","Madurai");
+
+//select * from table_name;
+select * from Student3;

@@ -93,3 +93,113 @@ select MIN(col_name1) from table_name;
 select MIN(id) from Student;
 
 select * from Student;
+
+use mani;
+
+
+-- count(column_name)
+/*
+It is similar to count the no. of numbers/rows
+select count(col_name) from table_name;
+*/
+select count(id) from student;
+
+-- SUM(colmn_name)
+/*
+It is like a sum() function in python
+And it is addition the col_number
+select SUM(col_name) from table_name;
+*/
+select SUM(id) from Student;
+
+-- AVG(column_name)
+/*
+It is a avg() function in python
+And it is Addition all number and its check the average
+select AVG(id) from Student;
+*/
+select AVG(id) from Student;
+
+-- upper(col_name)
+/*
+It is like a upper() String function in python
+And it is convert (all)cases to change the uppercase
+select upper(col_name) uppercasename from Student;
+*/
+select upper(name) uppercasename from Student;
+
+-- lower(col_name)
+/*
+It is like a lower() string function in python
+And it is convert (all) cases to change the lowercase
+select lower(col_name) lowercasename from table_name;
+*/
+select lower(name) uppercasename from Student;
+
+-- IN("value1","value2",...)
+/*
+It is showable a particular data in(inside)
+select * from table_name where col_name in ("value1","value2");
+*/
+select * from Student where name in("Bala","Santhosh");
+
+-- between
+/*
+{1,2,3,4,5,6,7}
+It is showable between the value1 to value2 (1 to 5)
+Eg : 1 to 5 {1,2,3,4,5} 5 data is showable
+select * from table_name where col_name between value1 And Value2;
+*/
+select * from Student where id between 101 And 103;
+
+-- not between
+/*
+{1,2,3,4,5,6,7}
+It is showable between the value1 to value2 (1 to 5)
+Eg : 1 to 5 {6,7}  data is showable
+select * from table_name where col_name not between value1 And Value2;
+*/ 
+select * from Student where id not between 101 And 103;
+
+-- LIKE('value1%')
+/*
+It is a searching the data
+eg: google search >type :->zo (And it is display the starting in zo (zoho,zoo,....)
+select * from table_name where name LIKE 'value1%';
+*/
+select * from Student where name LIKE 'balak%';
+-- ALTER add new column
+/*
+It is a add the new column in the table
+alter table table_name add email varchar(50);
+*/
+alter table Student add email varchar(50);
+
+-- ALTER inside drop
+/*
+It is a remove the column in the table
+alter table table_name drop col_name;
+*/
+alter table Student drop email;
+
+-- UPDATE 
+/*
+It is a update the data 
+Eg: Bala name inside change / set the id = 105 (old id: 1234567890)
+update table_name set col_1=value where col_2="value" limit 1;
+*/
+update Student set id=105 where name="Bala" limit 1;
+
+-- Delete 
+/*
+It is a delete the single data
+delete from table_name where col_1="value" limit 1;
+*/
+delete from Student where address="Madurai" limit 1;
+
+delete from Student limit 4;
+
+-- delete the table
+drop table Student;
+
+select * from student;

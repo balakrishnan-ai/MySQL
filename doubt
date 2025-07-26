@@ -18,3 +18,23 @@ mailid varchar(50)
 select * from csv;
 
 insert into csv(id,FirstName,MiddleName,LastName,FatherName,MotherName,Bdate,Bmonth,Byear,Mobileno,mailid) values
+(1,'john',' ','Doe','Richard','Anna A',15,8,1995,'1234567890','john@gmail.com');
+(2,'Arjun',' ','kumar','venkat','Jancy',18,9,2004',7487384837','Arjun@gmail.com');
+(3,'Ajith',' ','kumar','Nimal','swathi',30,8,2003,'4334343890','thala@gmail.com');
+(4,' vicky',' ','B','Richard','Anna B',15,8,1995,'1234567890','john@gmail.com');
+(5,'vicknesh',' ','C','Richard','Anna C',15,8,1995,'1234567890','john@gmail.com');
+(6,'vickneshwaran',' ','D','Richard','Anna D',15,8,1995,'1234567890','vickneshwaran@gmail.com');
+(7,'Ajmal',' ','E','Richard','Anna E',15,8,1995,'1234567890','Ajmal@gmail.com');
+(8,'Saahul',' ','F','Richard','Anna F',15,8,1995,'1234567890','Saahul@gmail.com');
+(9,'Vishwa',' ','I','Richard','Anna I',15,8,1995,'1234567890','Vishwa@gmail.com');
+(10,'Bala',' ','J','Richard','Anna J',15,8,1995,'1234567890','Bala@gmail.com');
+(11,'Balaji',' ','K','Richard','Anna K',15,8,1995,'1234567890','Balaji@gmail.com');
+(12,'Balamurugan',' ','L','Richard','Anna L',15,8,1995,'1234567890','Balamurugan@gmail.com');
+(13,'Balakrishnan',' ','M','Richard','Anna K',15,8,1995,'1234567890','Balakrishnan@gmail.com');
+(14,'Balamani',' ','K','Richard','Anna K',15,8,1995,'1234567890','Balamani@gmail.com');
+(15,'Muthumani',' ','N','Richard','Anna N',15,8,1995,'1234567890','Muthumani@gmail.com');
+(16,'Muthuselvam',' ','O','Richard','Anna O',15,8,1995,'1234567890','Muthuselvam@gmail.com');
+(17,'Muthuselvaraj',' ','A','Richard','Anna A',15,8,1995,'1234567890','Muthuselvaraj@gmail.com');
+(18,'Muguthan',' ','B','Richard','Anna B',15,8,1995,'1234567890','Muguthan@gmail.com');
+(19,'Madhu',' ','N','Murugan','Mugeshwari M',5,8,2005,'7437984738','madurai@gmail.com');
+(20,'Venkat',' ','K','Kumar','kumari',01,08,2005,'2343343433','venki@gmail.com');

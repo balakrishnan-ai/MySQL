@@ -1,0 +1,20 @@
+create database contact;
+use contact;
+
+create table csv(
+id int,
+FirstName varchar(25),
+MiddleName varchar(25),
+LastName varchar(25),
+FatherName varchar(25),
+MotherName varchar(25),
+Bdate int,
+Bmonth int,
+Byear int,
+Mobileno varchar(10),
+mailid varchar(50)
+);
+
+select * from csv;
+
+insert into csv(id,FirstName,MiddleName,LastName,FatherName,MotherName,Bdate,Bmonth,Byear,Mobileno,mailid) values
